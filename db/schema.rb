@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20170906232501) do
 
   create_table "campaign_quota", force: :cascade do |t|
     t.integer "campaign_id"
-    t.integer "num_respondent"
+    t.integer "num_respondents"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["campaign_id"], name: "index_campaign_quota_on_campaign_id"
