@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+      service = TapResearchApiServices.new
+      service.get_all_campaigns
+      pp "Fetched all campaigns"
+      service.get_all_quotas_and_qualifications
+      pp "Fetched all quotas and qualifications"
